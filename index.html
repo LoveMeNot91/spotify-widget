@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon widget Spotify</title>
+  <style>
+    body {
+      margin: 0;
+      background: #121212;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .player {
+      width: 300px;
+      padding: 20px;
+      border-radius: 18px;
+      background: #222;
+      text-align: center;
+    }
+    .cover {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .artist { color: #b3b3b3; }
+    .bar {
+      height: 5px;
+      background: #555;
+      border-radius: 5px;
+      margin: 15px 0 8px;
+      overflow: hidden;
+    }
+    .progress {
+      height: 100%;
+      width: 38%;
+      background: #1ed760;
+    }
+    .times {
+      display: flex;
+      justify-content: space-between;
+      color: #b3b3b3;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="player">
+    <img class="cover"
+      src="https://placehold.co/300x300/333333/FFFFFF?text=Spotify"
+      alt="Pochette de l'album">
+    <h2>Titre du morceau</h2>
+    <p class="artist">Nom de l'artiste</p>
+    <div class="bar"><div class="progress"></div></div>
+    <div class="times">
+      <span>1:24</span>
+      <span>3:42</span>
+    </div>
+  </div>
+</body>
+</html>
